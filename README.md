@@ -1,6 +1,6 @@
 # CF signalling network
 
-This repository contains the Cytoscape v3.9.0 session of the CF network, its nodes and edges data as dataframes. A custom style for nodes and edges was designed to enhance the visualization of the CF network. You can find the custom style in the Cytoscape session. Additionally, we have saved this style as an independent XML file.
+This repository contains the Cytoscape v3.9.0 session of the CF network and nodes and edges data as dataframes. A custom style for nodes and edges was designed to enhance the visualization of the CF network. You can find the custom style in the Cytoscape session. Additionally, we have saved this style as an independent XML file.
 
 ## CF network Cytoscape session
 
