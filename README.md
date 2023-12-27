@@ -6,15 +6,17 @@ All the codes to reproduce the analyses and the construction of the CF network a
 
 ## CF network Cytoscape session
 
-- **CF_network_cytoscape_session_2023_10_10.cys**
+    CF_network_cytoscape_session_2023_10_10.cys
 
 ## CF network nodes and edges
 
-- **CF_network_kegg_diff_pathways_with_CFTR_interactors_direct_tagged_nodes_df.txt** - Nodes
-- **CF_network_kegg_diff_pathways_with_CFTR_interactors_direct_tagged_interactions_df.txt** - Edges
+### Nodes
+    CF_network_kegg_diff_pathways_with_CFTR_interactors_direct_tagged_nodes_df.txt
+### Edges
+    CF_network_kegg_diff_pathways_with_CFTR_interactors_direct_tagged_interactions_df.txt
 
 ## Custom Style
 
-- **CF_network_style.xml**
+    CF_network_style.xml
 
 Feel free to play around with the CF network in Cytoscape for a more in-depth analysis and explore the XML file for further customisation.
