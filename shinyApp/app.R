@@ -5,14 +5,17 @@ library(htmlwidgets)
 library(shiny)
 
 graph.json.filename <- "CF_network_kegg_diff_pathways_with_CFTR_interactors_and_CFTR_without_unconnected_components.cyjs"
+graph <- fromJSON(graph.json.filename,
+                  flatten = TRUE)
+graph.nodes.df <- graph$elements$nodes
 graphAsJSON <- readAndStandardizeJSONNetworkFile(graph.json.filename)
 style.json.filename <- "CF_network_style.json"
-
-CF_PPI_network.lcc.node_type.nodes <- 
-  read.table(file = "CF_network_kegg_diff_pathways_with_CFTR_interactors_direct_tagged_nodes_df.txt",
-             sep = "\t",
-             header = T,
-             check.names = F)
+# 
+# CF_PPI_network.lcc.node_type.nodes <- 
+#   read.table(file = "CF_network_kegg_diff_pathways_with_CFTR_interactors_direct_tagged_nodes_df.txt",
+#              sep = "\t",
+#              header = T,
+#              check.names = F)
 
 # UI ----
 ui <-  shinyUI(fluidPage(
@@ -36,7 +39,9 @@ ui <-  shinyUI(fluidPage(
       #                       "preset",
       #                       "fcose")),
       
-      selectInput("selectName", "Select Node by HGNC:", choices = c("", CF_PPI_network.lcc.node_type.nodes$Symbol)),
+      selectInput("selectName", 
+                  "Select Node by Gene Name:", 
+                  choices = c("", sort(graph.nodes.df$data.name))),
       actionButton("fit", "Fit Graph"),
       actionButton("fitSelected", "Fit Selected"),
       actionButton("clearSelection", "Unselect Nodes"),
@@ -65,7 +70,11 @@ server <- function(input, output, session) {
   })
   
   observeEvent(input$selectName, ignoreInit=TRUE,{
-    session$sendCustomMessage(type="selectNodes", message=list(input$selectName))
+    GeneNames <- input$selectName
+    gene_id <- graph.nodes.df[which(graph.nodes.df$data.shared_name %in% GeneNames), 
+                                    "data.id"]
+    session$sendCustomMessage(type="selectNodes", 
+                              message=list(gene_id))
   })
   
   observeEvent(input$fitSelected, ignoreInit=TRUE,{

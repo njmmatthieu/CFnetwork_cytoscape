@@ -182,6 +182,7 @@
     "selector" : "edge",
     "css" : {
       "target-arrow-shape" : "triangle",
+      "curve-style" : "bezier",
       "font-family" : "Dialog",
       "font-weight" : "normal",
       "line-style" : "solid",
