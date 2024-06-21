@@ -1,0 +1,467 @@
+[ {
+  "format_version" : "1.0",
+  "generated_by" : "cytoscape-3.10.2",
+  "target_cytoscapejs_version" : "~2.1",
+  "title" : "logFC_subgroup1",
+  "style" : [ {
+    "selector" : "node",
+    "css" : {
+      "height" : 400.0,
+      "width" : 400.0,
+      "border-opacity" : 1.0,
+      "font-family" : "Helvetica-Bold",
+      "font-weight" : "normal",
+      "background-opacity" : 1.0,
+      "shape" : "ellipse",
+      "color" : "rgb(0,0,0)",
+      "text-valign" : "center",
+      "text-halign" : "center",
+      "font-size" : 90,
+      "border-width" : 0.0,
+      "text-opacity" : 1.0,
+      "background-color" : "rgb(204,204,204)",
+      "border-color" : "rgb(197,27,125)",
+      "content" : "data(name)"
+    }
+  }, {
+    "selector" : "node[Node_type = 'supernode']",
+    "css" : {
+      "width" : 300.0,
+      "height" : 300.0
+    }
+  }, {
+    "selector" : "node[Node_type = 'CFTR']",
+    "css" : {
+      "width" : 600.0,
+      "height" : 600.0
+    }
+  }, {
+    "selector" : "node[logFC_subgroup1 > 2]",
+    "css" : {
+      "background-color" : "rgb(26,152,80)"
+    }
+  }, {
+    "selector" : "node[logFC_subgroup1 = 2]",
+    "css" : {
+      "background-color" : "rgb(102,189,99)"
+    }
+  }, {
+    "selector" : "node[logFC_subgroup1 > 0][logFC_subgroup1 < 2]",
+    "css" : {
+      "background-color" : "mapData(logFC_subgroup1,0,2,rgb(255,255,191),rgb(102,189,99))"
+    }
+  }, {
+    "selector" : "node[logFC_subgroup1 > -2][logFC_subgroup1 < 0]",
+    "css" : {
+      "background-color" : "mapData(logFC_subgroup1,-2,0,rgb(244,109,67),rgb(255,255,191))"
+    }
+  }, {
+    "selector" : "node[logFC_subgroup1 = -2]",
+    "css" : {
+      "background-color" : "rgb(244,109,67)"
+    }
+  }, {
+    "selector" : "node[logFC_subgroup1 < -2]",
+    "css" : {
+      "background-color" : "rgb(215,48,39)"
+    }
+  }, {
+    "selector" : "node[CFTR_interactor = 'TRUE']",
+    "css" : {
+      "border-width" : 50.0
+    }
+  }, {
+    "selector" : "node[Node_type = 'End point']",
+    "css" : {
+      "shape" : "triangle"
+    }
+  }, {
+    "selector" : "node[Node_type = 'Receptor Ligand']",
+    "css" : {
+      "shape" : "ellipse"
+    }
+  }, {
+    "selector" : "node[Node_type = 'End point - Caspases']",
+    "css" : {
+      "shape" : "triangle"
+    }
+  }, {
+    "selector" : "node[Node_type = 'End point - Regulation of actin cytoskeleton']",
+    "css" : {
+      "shape" : "triangle"
+    }
+  }, {
+    "selector" : "node[Node_type = 'Receptor']",
+    "css" : {
+      "shape" : "ellipse"
+    }
+  }, {
+    "selector" : "node[Node_type = 'End point - TF']",
+    "css" : {
+      "shape" : "triangle"
+    }
+  }, {
+    "selector" : "node[Node_type = 'CFTR']",
+    "css" : {
+      "shape" : "octagon"
+    }
+  }, {
+    "selector" : "node[Node_type = 'Protein']",
+    "css" : {
+      "shape" : "ellipse"
+    }
+  }, {
+    "selector" : "node[Node_type = 'End point - Others']",
+    "css" : {
+      "shape" : "triangle"
+    }
+  }, {
+    "selector" : "node[ id = '516' ]",
+    "css" : {
+      "background-color" : "rgb(78,179,211)",
+      "shape" : "triangle"
+    }
+  }, {
+    "selector" : "node[ id = '612' ]",
+    "css" : {
+      "background-color" : "rgb(78,179,211)",
+      "shape" : "triangle"
+    }
+  }, {
+    "selector" : "node[ id = '678' ]",
+    "css" : {
+      "background-color" : "rgb(78,179,211)",
+      "shape" : "triangle"
+    }
+  }, {
+    "selector" : "node[ id = '502' ]",
+    "css" : {
+      "background-color" : "rgb(78,179,211)",
+      "shape" : "triangle"
+    }
+  }, {
+    "selector" : "node[ id = '516' ]",
+    "css" : {
+      "background-color" : "rgb(78,179,211)",
+      "shape" : "triangle"
+    }
+  }, {
+    "selector" : "node[ id = '612' ]",
+    "css" : {
+      "background-color" : "rgb(78,179,211)",
+      "shape" : "triangle"
+    }
+  }, {
+    "selector" : "node[ id = '678' ]",
+    "css" : {
+      "background-color" : "rgb(78,179,211)",
+      "shape" : "triangle"
+    }
+  }, {
+    "selector" : "node[ id = '502' ]",
+    "css" : {
+      "background-color" : "rgb(78,179,211)",
+      "shape" : "triangle"
+    }
+  }, {
+    "selector" : "node:selected",
+    "css" : {
+      "background-color" : "rgb(255,255,0)"
+    }
+  }, {
+    "selector" : "edge",
+    "css" : {
+      "line-style" : "solid",
+      "content" : "",
+      "font-family" : "Dialog",
+      "font-weight" : "normal",
+      "source-arrow-shape" : "none",
+      "line-color" : "rgb(64,64,64)",
+      "color" : "rgb(0,0,0)",
+      "opacity" : 1.0,
+      "target-arrow-color" : "rgb(64,64,64)",
+      "font-size" : 10,
+      "source-arrow-color" : "rgb(64,64,64)",
+      "width" : 20.0,
+      "target-arrow-shape" : "triangle",
+      "text-opacity" : 1.0
+    }
+  }, {
+    "selector" : "edge[effect = 'compound - 19']",
+    "css" : {
+      "line-style" : "dotted"
+    }
+  }, {
+    "selector" : "edge[effect = 'binding/association']",
+    "css" : {
+      "line-style" : "dashed"
+    }
+  }, {
+    "selector" : "edge[effect = 'inhibition']",
+    "css" : {
+      "line-style" : "solid"
+    }
+  }, {
+    "selector" : "edge[effect = 'compound - 20']",
+    "css" : {
+      "line-style" : "dotted"
+    }
+  }, {
+    "selector" : "edge[effect = 'ubiquitination']",
+    "css" : {
+      "line-style" : "solid"
+    }
+  }, {
+    "selector" : "edge[effect = 'dissociation']",
+    "css" : {
+      "line-style" : "dashed"
+    }
+  }, {
+    "selector" : "edge[effect = 'indirect effect']",
+    "css" : {
+      "line-style" : "dotted"
+    }
+  }, {
+    "selector" : "edge[effect = 'dephosphorylation']",
+    "css" : {
+      "line-style" : "solid"
+    }
+  }, {
+    "selector" : "edge[effect = 'compound - 89']",
+    "css" : {
+      "line-style" : "dotted"
+    }
+  }, {
+    "selector" : "edge[effect = 'activation']",
+    "css" : {
+      "line-style" : "solid"
+    }
+  }, {
+    "selector" : "edge[effect = 'compound - 6']",
+    "css" : {
+      "line-style" : "dotted"
+    }
+  }, {
+    "selector" : "edge[effect = 'phosphorylation']",
+    "css" : {
+      "line-style" : "solid"
+    }
+  }, {
+    "selector" : "edge[effect = 'compound - 16']",
+    "css" : {
+      "line-style" : "dotted"
+    }
+  }, {
+    "selector" : "edge[effect = 'compound - 5']",
+    "css" : {
+      "line-style" : "dotted"
+    }
+  }, {
+    "selector" : "edge[effect = 'compound - 15']",
+    "css" : {
+      "line-style" : "dotted"
+    }
+  }, {
+    "selector" : "edge[effect = 'compound - 37']",
+    "css" : {
+      "line-style" : "dotted"
+    }
+  }, {
+    "selector" : "edge[effect = 'compound - 19']",
+    "css" : {
+      "target-arrow-shape" : "triangle"
+    }
+  }, {
+    "selector" : "edge[effect = 'undirected']",
+    "css" : {
+      "target-arrow-shape" : "none"
+    }
+  }, {
+    "selector" : "edge[effect = 'binding/association']",
+    "css" : {
+      "target-arrow-shape" : "none"
+    }
+  }, {
+    "selector" : "edge[effect = 'inhibition']",
+    "css" : {
+      "target-arrow-shape" : "tee"
+    }
+  }, {
+    "selector" : "edge[effect = 'ubiquitination']",
+    "css" : {
+      "target-arrow-shape" : "triangle"
+    }
+  }, {
+    "selector" : "edge[effect = 'compound - 20']",
+    "css" : {
+      "target-arrow-shape" : "triangle"
+    }
+  }, {
+    "selector" : "edge[effect = 'dissociation']",
+    "css" : {
+      "target-arrow-shape" : "none"
+    }
+  }, {
+    "selector" : "edge[effect = 'dephosphorylation']",
+    "css" : {
+      "target-arrow-shape" : "triangle"
+    }
+  }, {
+    "selector" : "edge[effect = 'compound - 89']",
+    "css" : {
+      "target-arrow-shape" : "triangle"
+    }
+  }, {
+    "selector" : "edge[effect = 'activation']",
+    "css" : {
+      "target-arrow-shape" : "triangle"
+    }
+  }, {
+    "selector" : "edge[effect = 'phosphorylation']",
+    "css" : {
+      "target-arrow-shape" : "triangle"
+    }
+  }, {
+    "selector" : "edge[effect = 'compound - 6']",
+    "css" : {
+      "target-arrow-shape" : "triangle"
+    }
+  }, {
+    "selector" : "edge[effect = 'compound - 16']",
+    "css" : {
+      "target-arrow-shape" : "triangle"
+    }
+  }, {
+    "selector" : "edge[effect = 'compound - 5']",
+    "css" : {
+      "target-arrow-shape" : "triangle"
+    }
+  }, {
+    "selector" : "edge[effect = 'compound - 15']",
+    "css" : {
+      "target-arrow-shape" : "triangle"
+    }
+  }, {
+    "selector" : "edge[effect = 'compound - 37']",
+    "css" : {
+      "target-arrow-shape" : "triangle"
+    }
+  }, {
+    "selector" : "edge[effect = 'compound - 19']",
+    "css" : {
+      "line-color" : "rgb(82,82,82)",
+      "target-arrow-color" : "rgb(82,82,82)",
+      "source-arrow-color" : "rgb(82,82,82)"
+    }
+  }, {
+    "selector" : "edge[effect = 'binding/association']",
+    "css" : {
+      "line-color" : "rgb(8,69,148)",
+      "target-arrow-color" : "rgb(8,69,148)",
+      "source-arrow-color" : "rgb(8,69,148)"
+    }
+  }, {
+    "selector" : "edge[effect = 'inhibition']",
+    "css" : {
+      "line-color" : "rgb(228,26,28)",
+      "target-arrow-color" : "rgb(228,26,28)",
+      "source-arrow-color" : "rgb(228,26,28)"
+    }
+  }, {
+    "selector" : "edge[effect = 'compound - 20']",
+    "css" : {
+      "line-color" : "rgb(82,82,82)",
+      "target-arrow-color" : "rgb(82,82,82)",
+      "source-arrow-color" : "rgb(82,82,82)"
+    }
+  }, {
+    "selector" : "edge[effect = 'ubiquitination']",
+    "css" : {
+      "line-color" : "rgb(0,90,50)",
+      "target-arrow-color" : "rgb(0,90,50)",
+      "source-arrow-color" : "rgb(0,90,50)"
+    }
+  }, {
+    "selector" : "edge[effect = 'dissociation']",
+    "css" : {
+      "line-color" : "rgb(8,69,148)",
+      "target-arrow-color" : "rgb(8,69,148)",
+      "source-arrow-color" : "rgb(8,69,148)"
+    }
+  }, {
+    "selector" : "edge[effect = 'indirect effect']",
+    "css" : {
+      "line-color" : "rgb(150,150,150)",
+      "target-arrow-color" : "rgb(150,150,150)",
+      "source-arrow-color" : "rgb(150,150,150)"
+    }
+  }, {
+    "selector" : "edge[effect = 'dephosphorylation']",
+    "css" : {
+      "line-color" : "rgb(231,41,138)",
+      "target-arrow-color" : "rgb(231,41,138)",
+      "source-arrow-color" : "rgb(231,41,138)"
+    }
+  }, {
+    "selector" : "edge[effect = 'compound - 89']",
+    "css" : {
+      "line-color" : "rgb(82,82,82)",
+      "target-arrow-color" : "rgb(82,82,82)",
+      "source-arrow-color" : "rgb(82,82,82)"
+    }
+  }, {
+    "selector" : "edge[effect = 'activation']",
+    "css" : {
+      "line-color" : "rgb(77,175,74)",
+      "target-arrow-color" : "rgb(77,175,74)",
+      "source-arrow-color" : "rgb(77,175,74)"
+    }
+  }, {
+    "selector" : "edge[effect = 'phosphorylation']",
+    "css" : {
+      "line-color" : "rgb(178,223,138)",
+      "target-arrow-color" : "rgb(178,223,138)",
+      "source-arrow-color" : "rgb(178,223,138)"
+    }
+  }, {
+    "selector" : "edge[effect = 'compound - 6']",
+    "css" : {
+      "line-color" : "rgb(82,82,82)",
+      "target-arrow-color" : "rgb(82,82,82)",
+      "source-arrow-color" : "rgb(82,82,82)"
+    }
+  }, {
+    "selector" : "edge[effect = 'compound - 16']",
+    "css" : {
+      "line-color" : "rgb(82,82,82)",
+      "target-arrow-color" : "rgb(82,82,82)",
+      "source-arrow-color" : "rgb(82,82,82)"
+    }
+  }, {
+    "selector" : "edge[effect = 'compound - 5']",
+    "css" : {
+      "line-color" : "rgb(82,82,82)",
+      "target-arrow-color" : "rgb(82,82,82)",
+      "source-arrow-color" : "rgb(82,82,82)"
+    }
+  }, {
+    "selector" : "edge[effect = 'compound - 15']",
+    "css" : {
+      "line-color" : "rgb(82,82,82)",
+      "target-arrow-color" : "rgb(82,82,82)",
+      "source-arrow-color" : "rgb(82,82,82)"
+    }
+  }, {
+    "selector" : "edge[effect = 'compound - 37']",
+    "css" : {
+      "line-color" : "rgb(82,82,82)",
+      "target-arrow-color" : "rgb(82,82,82)",
+      "source-arrow-color" : "rgb(82,82,82)"
+    }
+  }, {
+    "selector" : "edge:selected",
+    "css" : {
+      "line-color" : "rgb(255,0,0)"
+    }
+  } ]
+} ]
