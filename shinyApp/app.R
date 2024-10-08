@@ -4,7 +4,7 @@ library(jsonlite)
 library(htmlwidgets)
 library(shiny)
 
-graph.json.filename <- "CF_network_kegg_diff_pathways_with_CFTR_interactors_20240621.cyjs"
+graph.json.filename <- "CF_network_kegg_diff_pathways_with_CFTR_interactors_20240627.cyjs"
 graph <- fromJSON(graph.json.filename,
                   flatten = TRUE)
 graph.nodes.df <- graph$elements$nodes
@@ -49,12 +49,17 @@ source_nodes <- c("TRADD",
 colorByList <- c("", 
                  "Subgroup1 logFC"="logFC_subgroup1.json",
                  "Subgroup2 logFC "="logFC_subgroup2.json",
-                 "Betweenness Centrality Score"="BC_score.json",
-                 "Rauniyar logFC"="logFC_Rauniyar.json")
+                 # "Betweenness Centrality Score"="BC_score.json",
+                 "Rauniyar logFC"="logFC_Rauniyar.json",
+                 "Braccia logFC"="logFC_Braccia.json",
+                 "None"="CF_network_style.json")
 
 
 # UI ----
 ui <-  shinyUI(fluidPage(
+  
+  # Application title
+  titlePanel("The CF network"),
   
   tags$head(
     tags$link(rel = "stylesheet", type = "text/css",
@@ -139,16 +144,7 @@ server <- function(input, output, session) {
   
   observeEvent(input$loadStyleFile, ignoreInit=TRUE, {
     if(input$loadStyleFile != "") {
-      print(input$loadStyleFile)
-      # styleFile = colorByList[[input$loadStyleFile]]
-      # print(styleFile)
-      print(file.exists(input$loadStyleFile))
       loadStyleFile(input$loadStyleFile)
-      # output$cyjShiny <- renderCyjShiny({
-      #   cyjShiny(graphAsJSON, 
-      #            layoutName="preset", 
-      #            styleFile=styleFile)
-      # })
     }
   })
   

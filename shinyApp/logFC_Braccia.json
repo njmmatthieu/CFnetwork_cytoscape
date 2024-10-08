@@ -2,7 +2,7 @@
   "format_version" : "1.0",
   "generated_by" : "cytoscape-3.10.2",
   "target_cytoscapejs_version" : "~2.1",
-  "title" : "BC_score",
+  "title" : "Braccia_proteomics",
   "style" : [ {
     "selector" : "node",
     "css" : {
@@ -24,34 +24,34 @@
       "content" : "data(name)"
     }
   }, {
-    "selector" : "node[BC_score > 9,458.27082966]",
+    "selector" : "node[log2FC_Braccia > 2]",
     "css" : {
-      "background-color" : "rgb(63,0,125)"
+      "background-color" : "rgb(26,152,80)"
     }
   }, {
-    "selector" : "node[BC_score = 9,458.27082966]",
+    "selector" : "node[log2FC_Braccia = 2]",
     "css" : {
-      "background-color" : "rgb(84,39,143)"
+      "background-color" : "rgb(102,189,99)"
     }
   }, {
-    "selector" : "node[BC_score > 4,729.13525391][BC_score < 9,458.27082966]",
+    "selector" : "node[log2FC_Braccia > 0][log2FC_Braccia < 2]",
     "css" : {
-      "background-color" : "mapData(BC_score,4,729.13525391,9,458.27082966,rgb(158,154,200),rgb(84,39,143))"
+      "background-color" : "mapData(log2FC_Braccia,0,2,rgb(255,255,191),rgb(102,189,99))"
     }
   }, {
-    "selector" : "node[BC_score > 0][BC_score < 4,729.13525391]",
+    "selector" : "node[log2FC_Braccia > -2][log2FC_Braccia < 0]",
     "css" : {
-      "background-color" : "mapData(BC_score,0,4,729.13525391,rgb(239,237,245),rgb(158,154,200))"
+      "background-color" : "mapData(log2FC_Braccia,-2,0,rgb(244,109,67),rgb(255,255,191))"
     }
   }, {
-    "selector" : "node[BC_score = 0]",
+    "selector" : "node[log2FC_Braccia = -2]",
     "css" : {
-      "background-color" : "rgb(239,237,245)"
+      "background-color" : "rgb(244,109,67)"
     }
   }, {
-    "selector" : "node[BC_score < 0]",
+    "selector" : "node[log2FC_Braccia < -2]",
     "css" : {
-      "background-color" : "rgb(252,251,253)"
+      "background-color" : "rgb(215,48,39)"
     }
   }, {
     "selector" : "node[Node_type = 'End point']",
